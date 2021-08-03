@@ -118,7 +118,7 @@ class Square extends React.Component {
             switchName1 = this.state.squares[i];
             switchIndex1 = i;
         }
-        else if(winnerSelect && selected && this.state.squares[i] != switchName1){
+        else if(winnerSelect && selected && this.state.squares[i] !== switchName1){
             switchName2 = this.state.squares[i]
             switchIndex2 = i;
             className[switchIndex1] = 'square';
